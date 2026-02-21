@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. I.R. Chukwuka's Dermatology | Web Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ifeanyi R. Chukwuka</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <!-- Used "href = "#"" to overcome a bug with using a sticky nav bar. -->
+          <li><a href="#">Back to Top</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <img
+          src="/images/Me in Eately - cropped.jpeg"
+          alt="Me in Eately, circa December 2025"
+        />
+        <p>
+          I am a <strong>Doctor in Dermatology</strong> who has extensive
+          experience in aesthetic and medical dermatology.
+        </p>
+        <p>
+          I am teaching myself to code -- with the aim to deploy
+          <strong>10</strong> projects by <strong>December 1 2026</strong>.
+        </p>
+        <div>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <article class="project-card">
+          <h3>Addition Blitz Game</h3>
+          <p>How many sums can you answer correctly in 1 minute?</p>
+          <p>Made with Vanilla JS.</p>
+          <a href="https://additionblitz.netlify.app/" class="btn btn-primary"
+            >View Project</a
+          >
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I would love to hear from you! Let's talk.</p>
+        <a href="mailto:ifeanyichukwuka@gmail.com" class="btn btn-secondary"
+          >Email Me</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Ifeanyi R. Chukwuka |
+        <a href="https://www.linkedin.com/in/ifeanyi-chukwuka-8ab28946/"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://github.com/steppino45">GitHub</a>
+      </p>
+    </footer>
+
+    <!-- JavaScript to reduce the size of the nav bar when scrolling. -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
