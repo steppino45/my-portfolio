@@ -43,7 +43,7 @@ header {
   padding: 20px 40px;
   border-bottom: 3px solid var(--copper);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /* Smaller shadowed version of sticky nav when scrolled */
@@ -70,7 +70,7 @@ nav a {
   color: var(--text-heading);
   font-weight: bold;
   padding-bottom: 5px;
-  transition: all 0.1s;
+  transition: all 0.1s ease;
 }
 
 nav a:hover {
@@ -164,6 +164,10 @@ img {
   transform: translateY(-2px);
 }
 
+.btn-primary:active {
+  transform: scale(0.9) translateY(4px);
+}
+
 .btn-secondary {
   background-color: var(--teal-light);
   color: var(--white);
@@ -171,6 +175,11 @@ img {
 
 .btn-secondary:hover {
   background-color: var(--copper-light);
+  transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+  transform: scale(0.9) translateY(4px);
 }
 
 /* Skills/Tags */
@@ -195,8 +204,11 @@ footer {
 footer a {
   color: var(--copper-light);
   text-decoration: none;
+  transition: all 0.1s ease;
+  padding-bottom: 5px;
 }
 
 footer a:hover {
   color: var(--copper);
+  border-bottom: 2px solid var(--copper);
 }
